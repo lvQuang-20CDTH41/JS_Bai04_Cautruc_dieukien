@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ 2.32</title>
+</head>
+<body>
+    <script>
+        var number = parseInt(prompt("Nhap so can kiem tra"));
+        var mod = (number % 2);
+        switch (mod){
+            case 0: {
+                document.write(number + " la so chan");
+                break;
+            }
+            case 1: {
+                document.write(number + " la so le");
+                break;
+            }
+            default:{
+                document.write("Ky tu ban nhap khong phai la so");
+            }
+        }
+        //su dung if else
+        if(mod == 0){
+            document.write(number + ' la so chan');
+        }else if(mod == 1){
+            document.write(number + " la so le");
+        }else{
+            document.write('Ky tu ban nhap khong la phai so');
+        }
+    </script>
+</body>
+</html>

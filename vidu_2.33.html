@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ 2.33</title>
+</head>
+<body>
+    <script>
+        // truong hop khong co default
+        var color = prompt("Nhap mau can tim kiem");
+        switch (color){
+            case 'red':
+                document.write('Ban nhap mau do');
+                break;
+            case 'yellow':
+                document.write('ban nhap mau vang');
+                break;
+        }
+        document.write("<br>");
+        // truong hop khong co break
+        var number = parseInt(prompt("Vui long nhap 1 hoac 2"));
+        switch(number){
+            case 1:
+                document.write('Ban vua nhap so 1');
+            case 2: 
+                document.write('Ban vua nhap so 2');
+                break;
+            case 3: 
+                document.write('Ban vua nhap so 3');
+                break;
+            default:    
+                document.write('So ban nhap khong phu hop')
+        }
+        document.write("<br>");
+        // truong hop gom nhom case
+        switch (number){
+            case 1:
+            case 2:
+            case 3:
+                document.write("Ban vua nhap " + number);
+                break;
+            default:
+                document.write("Ban khong nhap 1 or 2 or 3");
+        }
+    </script>
+</body>
+</html>
